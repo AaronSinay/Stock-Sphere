@@ -36,12 +36,10 @@
             this.label_Product_Name = new System.Windows.Forms.Label();
             this.label_Product_Number = new System.Windows.Forms.Label();
             this.textBox_Product_Number = new System.Windows.Forms.TextBox();
-            this.label_Product_Prize = new System.Windows.Forms.Label();
-            this.textBox_Product_Prize = new System.Windows.Forms.TextBox();
-            this.label_Stocks = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox_Stocks = new System.Windows.Forms.TextBox();
-            this.label_Sales = new System.Windows.Forms.Label();
-            this.textBox_Sales = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox_Product_Price = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listView_Products
@@ -63,6 +61,7 @@
             this.button_Add.TabIndex = 2;
             this.button_Add.Text = "Add";
             this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
             // button2
             // 
@@ -120,74 +119,51 @@
             this.textBox_Product_Number.Size = new System.Drawing.Size(262, 23);
             this.textBox_Product_Number.TabIndex = 9;
             // 
-            // label_Product_Prize
+            // label1
             // 
-            this.label_Product_Prize.AutoSize = true;
-            this.label_Product_Prize.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Product_Prize.Location = new System.Drawing.Point(581, 13);
-            this.label_Product_Prize.Name = "label_Product_Prize";
-            this.label_Product_Prize.Size = new System.Drawing.Size(91, 18);
-            this.label_Product_Prize.TabIndex = 12;
-            this.label_Product_Prize.Text = "Product Price";
-            // 
-            // textBox_Product_Prize
-            // 
-            this.textBox_Product_Prize.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Product_Prize.Location = new System.Drawing.Point(569, 32);
-            this.textBox_Product_Prize.Name = "textBox_Product_Prize";
-            this.textBox_Product_Prize.Size = new System.Drawing.Size(164, 23);
-            this.textBox_Product_Prize.TabIndex = 11;
-            // 
-            // label_Stocks
-            // 
-            this.label_Stocks.AutoSize = true;
-            this.label_Stocks.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Stocks.Location = new System.Drawing.Point(751, 13);
-            this.label_Stocks.Name = "label_Stocks";
-            this.label_Stocks.Size = new System.Drawing.Size(49, 18);
-            this.label_Stocks.TabIndex = 14;
-            this.label_Stocks.Text = "Stocks";
-            this.label_Stocks.Click += new System.EventHandler(this.label2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(839, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Stocks";
             // 
             // textBox_Stocks
             // 
             this.textBox_Stocks.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Stocks.Location = new System.Drawing.Point(739, 32);
+            this.textBox_Stocks.Location = new System.Drawing.Point(825, 31);
             this.textBox_Stocks.Name = "textBox_Stocks";
-            this.textBox_Stocks.Size = new System.Drawing.Size(153, 23);
+            this.textBox_Stocks.Size = new System.Drawing.Size(224, 23);
             this.textBox_Stocks.TabIndex = 13;
-            this.textBox_Stocks.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label_Sales
+            // label2
             // 
-            this.label_Sales.AutoSize = true;
-            this.label_Sales.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Sales.Location = new System.Drawing.Point(910, 13);
-            this.label_Sales.Name = "label_Sales";
-            this.label_Sales.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label_Sales.Size = new System.Drawing.Size(41, 18);
-            this.label_Sales.TabIndex = 16;
-            this.label_Sales.Text = "Sales";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(581, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 18);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Product Price";
             // 
-            // textBox_Sales
+            // textBox_Product_Price
             // 
-            this.textBox_Sales.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Sales.Location = new System.Drawing.Point(898, 32);
-            this.textBox_Sales.Name = "textBox_Sales";
-            this.textBox_Sales.Size = new System.Drawing.Size(152, 23);
-            this.textBox_Sales.TabIndex = 15;
+            this.textBox_Product_Price.Font = new System.Drawing.Font("Inter", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Product_Price.Location = new System.Drawing.Point(569, 32);
+            this.textBox_Product_Price.Name = "textBox_Product_Price";
+            this.textBox_Product_Price.Size = new System.Drawing.Size(250, 23);
+            this.textBox_Product_Price.TabIndex = 11;
             // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 673);
-            this.Controls.Add(this.label_Sales);
-            this.Controls.Add(this.textBox_Sales);
-            this.Controls.Add(this.label_Stocks);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_Stocks);
-            this.Controls.Add(this.label_Product_Prize);
-            this.Controls.Add(this.textBox_Product_Prize);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox_Product_Price);
             this.Controls.Add(this.label_Product_Number);
             this.Controls.Add(this.textBox_Product_Number);
             this.Controls.Add(this.label_Product_Name);
@@ -217,12 +193,10 @@
         private System.Windows.Forms.Label label_Product_Name;
         private System.Windows.Forms.Label label_Product_Number;
         private System.Windows.Forms.TextBox textBox_Product_Number;
-        private System.Windows.Forms.Label label_Product_Prize;
-        private System.Windows.Forms.TextBox textBox_Product_Prize;
-        private System.Windows.Forms.Label label_Stocks;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_Stocks;
-        private System.Windows.Forms.Label label_Sales;
-        private System.Windows.Forms.TextBox textBox_Sales;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox_Product_Price;
     }
 }
 
