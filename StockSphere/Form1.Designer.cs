@@ -30,8 +30,8 @@
         {
             this.listView_Products = new System.Windows.Forms.ListView();
             this.button_Add = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_Edit = new System.Windows.Forms.Button();
+            this.button_Remove = new System.Windows.Forms.Button();
             this.textBox_Product_Name = new System.Windows.Forms.TextBox();
             this.label_Product_Name = new System.Windows.Forms.Label();
             this.label_Product_Number = new System.Windows.Forms.Label();
@@ -63,25 +63,27 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // button2
+            // button_Edit
             // 
-            this.button2.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(372, 602);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(324, 59);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_Edit.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Edit.Location = new System.Drawing.Point(372, 602);
+            this.button_Edit.Name = "button_Edit";
+            this.button_Edit.Size = new System.Drawing.Size(324, 59);
+            this.button_Edit.TabIndex = 3;
+            this.button_Edit.Text = "Edit";
+            this.button_Edit.UseVisualStyleBackColor = true;
+            this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
             // 
-            // button3
+            // button_Remove
             // 
-            this.button3.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(702, 602);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(324, 59);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Remove";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Remove.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Remove.Location = new System.Drawing.Point(702, 602);
+            this.button_Remove.Name = "button_Remove";
+            this.button_Remove.Size = new System.Drawing.Size(324, 59);
+            this.button_Remove.TabIndex = 4;
+            this.button_Remove.Text = "Remove";
+            this.button_Remove.UseVisualStyleBackColor = true;
+            this.button_Remove.Click += new System.EventHandler(this.button_Remove_Click);
             // 
             // textBox_Product_Name
             // 
@@ -168,8 +170,8 @@
             this.Controls.Add(this.textBox_Product_Number);
             this.Controls.Add(this.label_Product_Name);
             this.Controls.Add(this.textBox_Product_Name);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Remove);
+            this.Controls.Add(this.button_Edit);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.listView_Products);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -187,8 +189,8 @@
         #endregion
         private System.Windows.Forms.ListView listView_Products;
         private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_Edit;
+        private System.Windows.Forms.Button button_Remove;
         private System.Windows.Forms.TextBox textBox_Product_Name;
         private System.Windows.Forms.Label label_Product_Name;
         private System.Windows.Forms.Label label_Product_Number;
